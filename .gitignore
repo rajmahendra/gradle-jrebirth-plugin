@@ -1,0 +1,8 @@
+.DS_Store
+build
+.gradle
+.project
+.classpath
+.settings
+bin
+visage-gradle-sample/test

@@ -1,0 +1,20 @@
+defaultTasks 'clean', 'install'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+group = 'org.jrebirth'
+version = '0.1'
+
+defaultTasks 'clean','install'
+
+repositories { mavenCentral() }
+
+dependencies {
+	compile gradleApi()
+	groovy localGroovy()
+}
+
+

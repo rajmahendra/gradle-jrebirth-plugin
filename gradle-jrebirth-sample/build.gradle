@@ -1,0 +1,22 @@
+
+
+buildscript{
+	repositories {  mavenLocal() }
+	dependencies { classpath  'org.jrebirth:gradle-jrebirth-plugin:0.1' }
+}
+
+apply plugin: 'application'
+apply plugin: 'jrebirth'
+
+group = 'jrebirth-sample'
+version = '0.1-SNAPSHOT'
+
+mainClassName  = 'in.jugchennai.javamoney.trakstok.SampleApplication'
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+}
+
+jrebirth { jrebirthVersion="1.0" }
+
